@@ -1,0 +1,25 @@
+    {% load static %}
+    <!-- Criando o icone do menu quando ficar em tela pequena -->
+    <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <!-- Criando menu -->
+    <aside class="menu">
+        <div class="main-content menu-content">
+            <!-- JS para fechar o menu quando clicar em alguma seção -->
+            <h1 "<ul onclick="getElementById('close-menu').checked = false;">
+                <a href="#pessoal"><img src="{% static "global/img/logo-raul1.png" %}"</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#pessoal">Quem sou</a></li>
+                    <li><a href="#curriculo">Currículo</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#galeria">Imagens</a></li>
+                    <li><a href="#redes-sociais">Redes Socais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- criando uma classe para colocar um espaçamento e o texto nao ficar atras do menu e sim em baixo do menu, pelo fato do menu estar sempre fixo-->
+    <div class="espacamento-menu"></div>

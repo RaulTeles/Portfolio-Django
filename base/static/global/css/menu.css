@@ -1,0 +1,57 @@
+.menu{
+    background: linear-gradient( to bottom, #533053, #440044 );
+    /* Definindo a posição do menu, para rolar com a pagina e ainda sim ficar fixado */
+    position: fixed;
+    /* Atribuindo valores locais para garantir que fique sempre na posição indicado */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+/* criando classe de conteudo do menu para separar e organizar o menu */
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    /* faz com que os itens sempre se alinhem al centro */
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ajustando as ul's do menu para ficar mais organizado */
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    color: azure;
+    display:inline;
+    padding: 2rem;
+    font-size: 2.2rem;
+    /* posição relativa para a proxima regra do css se comportar da forma correta, onde a borda tem que só so das tags A (filho) */
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(223, 166, 60);
+    transition: all 200ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 70%;
+    left: 15%;
+}

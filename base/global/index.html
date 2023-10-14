@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Pessoal - Raul</title>
+    <!-- Importando fontes do google para a pagina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet">
+    <!-- Referenciando o Css da pagina -->
+    <link rel="stylesheet" href="{% static "global/css/variables.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/classes.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/elements.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/menu.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/styles.css" %}">
+    <link rel="shortcut icon" type="imagex/png" href="{% static "global/img/logo-raul.ico" %}">
+</head>
+<!-- × -->
+<body class="img-principal">
+    
+    {% include "global/partials/menu.html" %}
+    {% include "global/partials/section.html" %}
+    {% include "global/partials/rodape.html" %}
+
+</body>
+
+</html>

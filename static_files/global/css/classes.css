@@ -1,0 +1,48 @@
+
+/* zerando todo o padding e o margin da pagina */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-principal{
+    /* pegando uma imagem */
+    background-image: url(../img/img-principal.svg);
+    background-size: cover;
+    background-position: center center;      
+    /* Atribuindo a variavel global criada */
+    color: var(--white-color);
+}
+
+
+.main-bg{
+    background: white;
+    color: var(--primary-color);
+}
+
+/* criando a classe para sustentar o conteudo */
+.main-content{
+    /* definindo o tamanho maximo em largura do conteudo e a margem */
+    max-width: 120rem;
+    margin: 0 auto;
+    /* utilizando a variavel gap para padronizar o padding de todas as paginas que usar esta classe */
+    padding: 4rem var(--gap);
+}
+
+.section{
+    /* criando uma classe e definindo o tamanho minimo de 100vh (Tela completa) */
+    min-height: 100vh;
+}
+
+.espacamento-menu{
+    height: 6.7rem;
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+
+

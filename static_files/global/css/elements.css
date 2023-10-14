@@ -1,0 +1,82 @@
+
+html{
+    /* atribuindo a pagina html uma fonte size de 62,5 para utilizar o rem como medida durante a pagina*/
+    font-size: 62.5%;
+    /* configurando a rolagem para ficar mais suavel */
+    scroll-behavior: smooth;
+}
+
+body{
+    /* Atribuindo fonte ao body */
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+     /* Atribuindo a variavel global criada */
+    color: var(--primary-color);
+}
+/* retira todos os underlines dos links */
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* Atribuindo uma fonte aos h's */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Definindo um padrão para tamanho das letras dos H's */
+h1{
+    font-size: 6rem;
+    /* Transformando o texto referente em tudo maiusculo */
+    text-transform: uppercase;
+}
+h2{
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 3rem;
+}
+h6{
+    font-size: 2rem;
+}
+
+.resposive-table{
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table{
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, th{
+
+    white-space: nowrap;
+    padding: 0.4rem;
+    text-align: center;
+    border: 0.1rem solid beige;
+}
+
+table caption{
+    text-align: left;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+table tfoot{
+    background-color: beige;
+    
+}

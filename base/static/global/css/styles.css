@@ -1,0 +1,384 @@
+/* criando uma grid para organizar a pagina de intro do site */
+.intro-content {
+    position: relative;
+    margin-top: -5rem;
+    display: grid;
+    /* criando colunas para o grid */
+    grid-template-columns: 2fr 0.5fr;
+    gap: var(--gap);
+    /* alinhar os itens dentro das colunas
+    align-items: center; */
+    min-height: 100vh;
+}
+
+.intro-foto{
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.intro-text-content, .intro-foto{
+    display: flex;
+    flex-flow: column wrap;
+    /* alinhar conteudo na coluna */
+    justify-content: center;
+}
+
+
+.intro-text-content h2 {
+    font-size: 6.8rem;
+    margin-bottom: 5rem;
+}
+
+.intro-text-content p {
+    font-size: 2rem;
+}
+
+.intro-img img, .intro-img svg, .intro-foto {
+    max-width: 100%;
+    height: 100%;
+}
+
+.pessoal-content {
+    max-width: 65rem;
+    min-height: 50vh;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    text-align: center;
+}
+
+.experiencias-profissionais{
+    max-width: 120rem;
+    margin: 0 auto;
+    /* margin-bottom: 3rem; */
+    position: relative;
+    /* margin-top: -5rem; */
+    display: grid;
+    /* criando colunas para o grid */
+    grid-template-columns: 1fr 1fr;
+    /* alinhar os itens dentro das colunas
+    align-items: center; */
+    min-height: 40vh;
+}
+
+.experiencias-profissionais h6{
+    text-align: center;
+
+}
+
+.experiencias-profissionais p{
+    margin-top: 3rem;
+}
+
+.experiencias-pessoais{
+    max-width: 120rem;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.curriculo-pessoal{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 4rem var(--gap);
+    /* margin-bottom: 3rem; */
+    position: relative;
+    /* margin-top: -5rem; */
+    display: grid;
+    /* criando colunas para o grid */
+    grid-template-columns: 1fr 1fr;
+    /* alinhar os itens dentro das colunas
+    align-items: center; */
+    min-height: 50vh;
+}
+
+.curriculo-pessoal h6{
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.arquivo-curriculo{
+    max-width: 65rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    text-align: center;
+}
+
+.pessoal-content p {
+    margin-top: 3rem;
+}
+
+.projetos-content {
+    min-height: 100vh;
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.projetos-content h2 {
+    margin-top: 10rem;
+
+}
+
+.projetos-content p {
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+
+    /* criando um contador para adicionar um numero nos grids a seguir*/
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+/* criando contador  */
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    left: -1rem;
+    top: -3rem;
+    transform: rotate(5deg);
+}
+
+.galeria-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+
+.galeria-content h2{
+    margin-top: 10rem;
+
+}
+
+.galeria-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.galeria-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.galeria-img img:hover{
+    transform: translate(-3%,3%) scale(1.2) rotate(5deg);
+}
+
+.redes-content {
+    max-width: 65rem;
+    min-height: 50vh;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    text-align: center;
+}
+
+.redes-content h2{
+    margin-top: 10rem;
+}
+
+.tabela{
+    margin-top: 5rem;
+}
+
+.contato-content {
+    position: relative;
+    display: grid;
+    /* criando colunas para o grid */
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    /* alinhar os itens dentro das colunas
+    align-items: center; */
+    min-height: 100vh;
+}
+
+.contato-content .intro-img{
+    grid-column: span 2;
+}
+
+.red-imgs{
+    text-align: center;
+}
+
+.contato-form{
+    grid-column: span 2;
+}
+
+.contato-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.form-group{
+    flex: 1 1 400px;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-group input, textarea{
+    border: none;
+    background: rosybrown;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 5%;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-radius: 60%;
+}
+
+.form-group button:hover{
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder{
+    color: var(--primary-color);
+}
+
+.footer-page {
+    font-style: italic;
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+.footer-page a{
+    color: var(--primary-color);
+}
+
+.close-menu{
+    display: none;
+}
+
+.voltar-inicio{
+    display: none;
+}
+
+
+/* Ajustando o conteudo para que quando chegue a 600 pixels ela fique responsiva */
+@media(max-width: 800px){
+    .intro-content{
+        grid-template-columns: 1fr;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .galeria-img img{
+        width: 100%;
+    }
+
+    .galeria-img{
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+        /* Transformnaod o menu em uma barra flutuante */
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+/* Deixar todos os menus em colunas */
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.3rem;
+        cursor: pointer;
+        border-radius: 60%;
+    }
+    /* Utilizando seletores para funcionamento do botão de menu */
+    .close-menu:checked~.menu{
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after{
+        display: block;
+        content: '×';
+    }
+    .espacamento-menu{
+        display: none;
+    }
+
+    .voltar-inicio{
+    display: block;
+    position: fixed;
+    z-index: 2;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 60%;
+    }
+
+}
