@@ -29,6 +29,11 @@
 
 }
 
+.ajustar-texto{
+    text-align: justify;
+    padding-right: 2.5rem;
+}
+
 
 .intro-text-content h2 {
     font-size: 6.8rem;

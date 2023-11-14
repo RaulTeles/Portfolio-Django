@@ -51,6 +51,10 @@ h6{
     font-size: 2rem;
 }
 
+.ajuste-h5{
+    margin-top: 3rem;
+}
+
 .resposive-table{
     max-width: 100%;
     overflow: hidden;
