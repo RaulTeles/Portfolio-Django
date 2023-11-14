@@ -11,6 +11,10 @@
     min-height: 100vh;
 }
 
+.foto-perfil{
+    border-radius: 40%;
+}
+
 .intro-foto{
     position: relative;
     width: 160px;
@@ -22,6 +26,7 @@
     flex-flow: column wrap;
     /* alinhar conteudo na coluna */
     justify-content: center;
+
 }
 
 
@@ -299,7 +304,7 @@
 
 
 /* Ajustando o conteudo para que quando chegue a 600 pixels ela fique responsiva */
-@media(max-width: 800px){
+@media(max-width: 980px){
     .intro-content{
         grid-template-columns: 1fr;
     }

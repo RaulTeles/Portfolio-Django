@@ -16,6 +16,8 @@ body{
 /* retira todos os underlines dos links */
 a{
     text-decoration: none;
+    color: blue;
+    font-style: bold;
 }
 p{
     line-height: 1.4;
